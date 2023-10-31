@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.stopwatch{
+    background-color: rgba(0, 0, 0, 0.9);
+    background: transparent;
+    padding: 5px 30px;
+    border: 2px solid #717377;
+    border-radius: 15px;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+}
+
+.timerDisplay{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.btn{
+    border: 1px solid #717377;
+    width: 60px;
+    height: 60px;
+    margin-top: 30px;
+    margin-left: 25px;
+    border-radius: 50%;
+    background: transparent;
+    color: #ffffff;
+    font-size: 20px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+#stopBtn:hover{
+    color: rgb(255, 0, 4);
+}
+
+#resetBtn:hover{
+    color: rgb(7, 187, 157);
+}
+
+#startBtn:hover{
+    color: rgb(0, 255, 0);
+}
+
+.display{
+    line-height: 85px;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 1.5s linear infinite;
+  }
+  @keyframes animate {
+    100%{
+      filter: hue-rotate(360deg);
+    }
+  }
+
